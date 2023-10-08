@@ -100,5 +100,21 @@
 
 ![](pics/PIC001.png)
 
+С помощью DRF был создан набор представлений:
+
+  - [FactoryViewSet](https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/views.py#L12)
+  - [RetailerViewSet](https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/views.py#L20)
+  - [EntrepreneurViewSet](https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/views.py#L28)
+
+
+Обновление через API поля «Задолженность перед поставщиком» было
+[запрещено](https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/serializers.py#L18).
+
+Была добавлена
+[возможность фильтрации объектов по определенной стране](
+https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/views.py#L16).
+
+Были [настроены права доступа к API](https://github.com/fedor-metsger/att/blob/5f860cffafc13cc94691b61aae040e57d581dc72/chain/permissions.py#L4)
+так, чтобы только активные сотрудники имели доступ к API.
 
    
